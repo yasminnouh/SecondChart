@@ -537,6 +537,13 @@
       // draws it.
       function drawChart() {
 
+		var myDataArray = [];
+		
+		for(var i=0; i<alltheData.observations.length; i++){
+			
+			console.log(alltheData.observations[i]);
+		}
+
         // Create the data table.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
@@ -548,7 +555,7 @@
           ['Zucchini', 1],
           ['Pepperoni', 2]
         ]);
-
+        
         // Set chart options
         var options = {'title':'Pizza Eating Session',
                        'width':400,
